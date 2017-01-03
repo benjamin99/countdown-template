@@ -3,8 +3,12 @@
 	<head>
 		<style type="text/css">
 		@font-face {
-			font-family: "DS-DIGIT";
-			src: url('./fonts/Roboto-Regular.ttf')  format('truetype');
+			font-family: "my-font";
+			src: url('./fonts/SourceHanSansTW-Light.otf')  format('truetype');
+		}
+		@font-face {
+			font-family: "my-font-bold";
+			src: url('./fonts/SourceHanSansTW-Bold.otf')  format('truetype');
 		}
 		</style>
 
@@ -17,17 +21,36 @@
 	</head>
 
 	<body background="./background.png" style="background-size: 100% 100%;">
+		<div style="
+			font-size: 55;
+			font-family: my-font;
+			padding-top: 30%;
+			padding-left: 4%;
+			color: white
+		">
+		開啟 2018 時光膠囊
+		</div>
 		<div id="getting-started" style="
-		    font-size: 80;
-		    font-family: DS-DIGIT;
-		    padding-left: 35%;
-		    padding-top: 38%;
+		    font-size: 55;
+		    font-family: my-font-bold;
+		    padding-left: 4%;
+		    padding-top: -10;
+		    margin-top: -20;
 		    color: white
 		"></div>
 		<script type="text/javascript">
-		  $('#getting-started').countdown('2017/07/02', function(event) {
-		    $(this).html(event.strftime('還剩下 %d 天 %H:%M:%S'));
+		  $('#getting-started').countdown('2017/12/31', function(event) {
+		    $(this).html(event.strftime('還剩下 %D 天 %H 時 %M 分 %S 秒'));
 		  });
 		</script>
+		<div id="getting-started" style="
+		    font-size: 25;
+		    font-family: my-font;
+		    padding-left: 4%;
+		    padding-top: 2%;
+		    color: white
+		">
+		@時光膠囊板 寫下你的新年願望
+		</div>
 	</body>
 </html>
