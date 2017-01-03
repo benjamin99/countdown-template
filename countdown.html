@@ -1,0 +1,33 @@
+
+<html>
+	<head>
+		<style type="text/css">
+		@font-face {
+			font-family: "DS-DIGIT";
+			src: url('./fonts/DS-DIGIB.ttf')  format('truetype');
+		}
+		</style>
+
+		<script
+	  		src="https://code.jquery.com/jquery-3.1.1.js"
+	  		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+	  		crossorigin="anonymous"></script>
+
+		<script src="./jquery.countdown.js"></script>
+	</head>
+
+	<body background="./background.jpg">
+		<div id="getting-started" style="
+		    font-size: 110;
+		    font-family: DS-DIGIT;
+		    padding-left: 35%;
+		    padding-top: 38%;
+		    color: white
+		"></div>
+		<script type="text/javascript">
+		  $('#getting-started').countdown('2017/07/02', function(event) {
+		    $(this).html(event.strftime('%d days %H:%M:%S'));
+		  });
+		</script>
+	</body>
+</html>
