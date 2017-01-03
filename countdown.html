@@ -4,7 +4,7 @@
 		<style type="text/css">
 		@font-face {
 			font-family: "DS-DIGIT";
-			src: url('./fonts/DS-DIGIB.ttf')  format('truetype');
+			src: url('./fonts/Roboto-Regular.ttf')  format('truetype');
 		}
 		</style>
 
@@ -18,7 +18,7 @@
 
 	<body background="./background.png" style="background-size: 100% 100%;">
 		<div id="getting-started" style="
-		    font-size: 110;
+		    font-size: 80;
 		    font-family: DS-DIGIT;
 		    padding-left: 35%;
 		    padding-top: 38%;
@@ -26,7 +26,7 @@
 		"></div>
 		<script type="text/javascript">
 		  $('#getting-started').countdown('2017/07/02', function(event) {
-		    $(this).html(event.strftime('%d days %H:%M:%S'));
+		    $(this).html(event.strftime('還剩下 %d 天 %H:%M:%S'));
 		  });
 		</script>
 	</body>
